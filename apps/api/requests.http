@@ -22,6 +22,16 @@ content-type: application/json
   "url":"https://firecrawl.dev"
 }
 
+### Crawl Firecrawl Docs
+# @name crawlDocs
+POST {{baseUrl}}/v1/crawl HTTP/1.1
+Authorization: Bearer {{$dotenv TEST_API_KEY}}
+content-type: application/json
+
+{
+  "url": "https://docs.firecrawl.dev/introduction"
+}
+
 ### Check Crawl Status
 @crawlId = {{crawl.response.body.$.id}}
 # @name crawlStatus
