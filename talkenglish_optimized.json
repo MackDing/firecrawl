@@ -1,0 +1,47 @@
+{
+    "url": "https://www.talkenglish.com/",
+    "limit": 3000,
+    "scrapeOptions": {
+        "formats": ["markdown", "html"],
+        "onlyMainContent": true,
+        "waitFor": 3000,
+        "timeout": 60000,
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9"
+        }
+    },
+    "maxDepth": 7,
+    "allowBackwardLinks": false,
+    "allowExternalLinks": false,
+    "includePaths": [
+        "/lessons/*",
+        "/speaking/*", 
+        "/listening/*",
+        "/grammar/*",
+        "/vocabulary/*",
+        "/pronunciation/*",
+        "/beginner/*",
+        "/intermediate/*",
+        "/advanced/*",
+        "/business/*",
+        "/travel/*",
+        "/toefl/*",
+        "/ielts/*",
+        "*.mp3",
+        "*.wav",
+        "*.pdf",
+        "/interview/*"
+    ],
+    "excludePaths": [
+        "/admin/*",
+        "/login/*",
+        "/register/*",
+        "/user/*",
+        "/account/*",
+        "*.zip",
+        "/ads/*",
+        "/advertisement/*"
+    ]
+}
