@@ -1,18 +1,21 @@
 {
     "url": "https://www.talkenglish.com/",
-    "limit": 5000,
+    "limit": 10000,
     "scrapeOptions": {
         "formats": ["markdown", "html"],
         "onlyMainContent": false,
         "waitFor": 3000,
-        "timeout": 60000,
+        "timeout": 90000,
         "headers": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1"
         }
     },
-    "maxDepth": 7,
+    "maxDepth": 8,
     "allowBackwardLinks": false,
     "allowExternalLinks": false,
     "includePaths": [
@@ -32,7 +35,13 @@
         "/interview/*",
         "/audio/*",
         "/sounds/*",
-        "/media/*"
+        "/media/*",
+        "/video/*",
+        "/videos/*",
+        "/practice/*",
+        "/exercises/*",
+        "/quiz/*",
+        "/test/*"
     ],
     "excludePaths": [
         "/admin/*",
@@ -41,6 +50,9 @@
         "/user/*",
         "/account/*",
         "/ads/*",
-        "/advertisement/*"
+        "/advertisement/*",
+        "/privacy*",
+        "/terms*",
+        "/contact*"
     ]
 }
